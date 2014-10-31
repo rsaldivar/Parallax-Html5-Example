@@ -1,0 +1,322 @@
+<html>
+<head>
+	<title>Parallax Js</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+</head>
+<body>
+
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: helvetica, arial;
+		}
+		h1,h2,h3,h4,p{
+			color: white;
+		}
+		.calltoaction h1, .calltoaction h2{
+			font-size: 12em;
+			font-weight: bold;
+			text-align: center;
+			margin: 10%;
+		}
+		.container-fluid{
+			margin: 0px;
+			padding: 0px;
+		}
+		.parallaxbackground {
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 0;
+		}
+		.parallaxobject{
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 0;
+		}
+		video , .video{
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
+		.contacto-separador{background: url('http://www.putzengel.at/assets/graphics/kontakt/map_mask.png') no-repeat top left;
+			width: 100px;
+			height: 100%;
+			z-index: 100;
+			position: absolute;
+		}
+		.contacto-mapa{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: 750px;
+			top: 0;
+			background-color: #FFF;
+			z-index: 1;
+		}
+		.textoShuffle{
+			font-size: 46pt;
+			color: white;
+			text-align: center;
+			text-shadow: 0 1px 0 black, 0 0 10px black;
+		}
+		.objeto_zapato{
+			background-image: url("http://johnpolacek.github.io/scrolldeck.js/decks/parallax/images/trainers.png");
+		}
+		.back_text {
+			background-image: url("http://www.ktcagency.com/images/home1.jpg");
+		}
+		.back_portafolio {
+			background-image: url("http://evek.com.mx/img/banner-background.png");
+		}
+		.back_toolstips {
+			height: 1500px;
+			background:  #57CFF4 url("http://johnpolacek.github.io/scrolldeck.js/decks/parallax/images/secondBG.jpg");
+		}
+		.back_efecto {
+			background: #FBCF61 url("http://www.google.com/nexus/images/nexus-7-new/moments/entertainment-parallax-2400.jpg") ;
+		}
+		.back_contacto {
+			background: #6BD57E url("http://www.putzengel.at/assets/graphics/kontakt/bg_konakt.gif");
+		}
+
+
+		.gradiente{
+			    -o-animation: huerotator 3s infinite alternate;
+				-ms-animation: huerotator 3s infinite alternate;
+				-moz-animation: huerotator 3s infinite alternate;
+				-webkit-animation: huerotator 3s infinite alternate;
+				animation: huerotator 3s infinite alternate;
+				background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(151, 202, 91, 0.5)), color-stop(1, rgba(189, 101, 165, 0.5)));
+				background: -o-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);
+				background: -ms-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);
+				background: -moz-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);
+				background: -webkit-linear-gradient(left, rgba(151, 202, 91, 0.5) 0, rgba(189, 101, 165, 0.5) 100%);
+				background: linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				right: 0;
+				width: 100%; height: 100%; z-index: 3;
+		}
+	</style>
+	<script type="text/javascript">
+
+
+	</script>
+
+	<header>
+		<nav class="navbar  navbar-inverse navbar-fixed-bottom" role="navigation">
+			<ul class="nav navbar-nav">
+            	<li><a href="#seccion-0">Seccion Video</a></li>
+            	<li><a href="#seccion-1">Seccion Parallax background</a></li>
+            	<li><a href="#seccion-2">Seccion Hovers</a></li>
+            	<li><a href="#seccion-3">Seccion Sprites</a></li>
+            	<li><a href="#seccion-4">Seccion Object Parallax</a></li>
+            	<li><a href="#seccion-5">Seccion Contacto</a></li>
+          	</ul>
+		</nav>
+
+	</header>
+	<div class="container-fluid">
+		
+		<div  id="seccion-0" class="parallaxbackground back_video" data-stellar-background-ratio="0.5">
+			<div class="row">
+   				<div class="col-md-12">
+   					<div  class="textoShuffle">Seccion con video </div>
+					 <div class="gradiente" >
+					 	
+					 	<div class="calltoaction">
+					 		<h1>TITULO </h1>
+					 		<h2>DESCRIPCION </h2>
+					 	</div>
+					 </div>
+					 	<!--video autoplay muted loop>
+					 		<source type="video/mp4" src="https://static.mejorando.la/landing//static/videos/home.mp4">
+					 	</video-->
+					 	<!--iframe class="video" src="http://player.vimeo.com/video/22428395?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" style="width:100%; height:100%;" 
+					 	frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe-->
+					 	<video id="big-video-vid1_html5_api" class="vjs-tech" preload="auto" data-setup="{}" autoplay="" webkit-playsinline="" style="position: relative; width: 1903px; height: auto;" loop="" src="http://player.vimeo.com/external/97546836.hd.mp4?s=8408623e65dca93c2970466fc1abd0c8"></video>
+   				</div>
+   			</div>
+		</div><!--seccion 0 video -->
+
+
+		<div id="seccion-1" class="parallaxbackground back_text" data-stellar-background-ratio="0.5">
+			<div class="row">
+  				<div class="col-md-12">
+  					<div  class="textoShuffle">Roberto Saldivar</div>
+  				</div>
+  			</div>
+		</div>
+		<!--div-->
+
+		
+		<div id="seccion-2" class="parallaxbackground back_portafolio" data-stellar-background-ratio="0.5">
+			<div class="row">
+  				<div class="col-md-12">
+  					<div  class="textoShuffle">Effecto Hover</div>
+  				</div>
+  			</div>
+		</div>
+		
+		<div id="seccion-3" class="parallaxbackground back_efecto" data-stellar-background-ratio="0.5">
+			<div class="row">
+  				<div class="col-md-6">
+  					<div  class="textoShuffle">Animacion Sprite</div>
+  					<div id='mySpriteSpin1'></div>
+  				</div>
+  				<div class="col-md-6">
+  					<div id='mySpriteSpin2'></div>
+  				</div>
+			</div>
+		</div>
+
+
+		<div id="seccion-4" class="parallaxbackground back_toolstips" data-stellar-background-ratio="0.2">
+			<div class="row">
+				<div class="col-md-6">
+  					<div class="parallaxobject objeto_zapato" style="background-position-x: 15%!important;" data-stellar-background-ratio="0.1" data-stellar-horizontal-offset="-100" data-stellar-vertical-offset="5">
+  					</div>
+  				</div>
+  				<div class="col-md-4">
+
+  					<div class="textoShuffle">Parrallax Object</div>
+					<h1>Title</h1>
+					<hr>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+					</p>
+				</div>
+				<divclass="col-md-1" ></div>
+			</div>
+
+		</div>
+
+
+		
+		<div id="seccion-5" class="parallaxbackground back_contacto" data-stellar-background-ratio="0.5">
+			<div class="row">
+  				<div class="col-md-7" >
+  					<div  class="textoShuffle">Mapa y contacto</div>
+  				</div>
+  				<div class="col-md-5">
+  					<div class="contacto-separador"></div>
+  					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3688137.7878470873!2d-99.81415105!3d25.48178925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1411950312526"  style="width:100%; height:100%; pointer-events:none" frameborder="0" style="border:0"></iframe>
+  				</div>
+  			</div>
+
+		</div>
+
+	</div>
+
+
+<audio id="beep">
+	<source src="button_rollover.mp3" controls></source>
+	Your browser isn't invited for super fun audio time.
+</audio>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+	<!-- stelar-->
+	<script type="text/javascript" src="js/jquery.stellar.js"></script>
+	<script type="text/javascript" src="js/jquery.shuffleLetters.js"></script>
+	<script type="text/javascript" src="js/spritespin.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	  $.stellar({
+	    horizontalScrolling: false,
+	    verticalOffset: 0
+	  });
+	});
+	</script>
+
+
+	<script type="text/javascript">
+	$(function(){
+		// container is the DOM element
+		var container = $(".textoShuffle")
+		// Shuffle the contents of container
+		container.shuffleLetters();	
+	});
+	</script>
+
+
+<!-- sprinte -->
+<script type='text/javascript'>
+  $("#mySpriteSpin1").spritespin({
+    source  : "img/sprite6x6.png", // path to sprite sheet
+    width   : 600,  // width in pixels of the window/frame
+    height  : 600,  // height in pixels of the window/frame
+    frames  : 36,   // total number of frames
+    framesX : 6,     // number of frames in one row inside the spritesheet
+    framesY : 6
+  });
+$("#mySpriteSpin2").spritespin({
+    source  : "http://fixedagency.com/administrator/media/sprite_animations/imagination-spritesheet6x6.png", // path to sprite sheet
+    width   : 600,  // width in pixels of the window/frame
+    height  : 600,  // height in pixels of the window/frame
+    frames  : 36,   // total number of frames
+    framesX : 6,     // number of frames in one row inside the spritesheet
+    framesY : 6
+  });
+
+
+
+  </script>
+
+
+<!-- Menu Sonido -->
+<script type="text/javascript">
+$("nav a") // loop each menu item
+  .each(function(i) {
+    if (i != 0) { // only clone if more than one needed
+      $("#beep")
+        .clone()
+        .attr("id", "beep-" + i)
+        .appendTo($(this).parent()); 
+    }
+    $(this).data("beeper", i); // save reference 
+  })
+  .mouseenter(function() {
+    $("#beep-" + $(this).data("beeper"))[0].play();
+  });
+$("#beep").attr("id", "beep-0"); // get first one into naming convention
+
+</script>
+<!--anclas-->
+<script type="text/javascript">
+$('a[href*=#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
+});
+</script>
+
+</body>
+</html>
